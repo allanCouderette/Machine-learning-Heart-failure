@@ -1,0 +1,1 @@
+curl -v http://localhost:8000/predict/1/1/1/1

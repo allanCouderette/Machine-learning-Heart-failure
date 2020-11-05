@@ -1,0 +1,22 @@
+import csv
+import psycopg2
+conn = psycopg2.connect("host=172.28.1.4 dbname=demo user=allan password=allan")
+cur = conn.cursor()
+cur.execute('SELECT * FROM users')
+listeTable = cur.fetchall() 
+print(listeTable)
+for row in listeTable:
+       print("Id = ", row[0], )
+       print("age = ", row[1])
+       print("anaemia = ", row[2])
+       print("creatinine_phosphokinase = ", row[3])
+       print("diabetes = ", row[4])
+       print("ejection_fraction = ", row[5])
+       print("high_blood_pressure = ", row[6])
+       print("platelets = ", row[7])
+       print("serum_creatinine = ", row[8])
+       print("serum_sodium = ", row[9])
+       print("sex = ", row[10])
+       print("smoking = ", row[11])
+       print("time = ", row[12])
+       print("DEATH_EVENT  = ", row[13], "\n")

@@ -1,0 +1,56 @@
+Le contexte 
+Vous êtes ml engineer pour un client (fictif ou non) et vous devez mettre en production votre travail (un model de ml) sous forme d’api, la tester et rédiger une documentation clair et explicite. Le livrable 
+
+    Un rapport PDF (minimum 4 pages) présentant une analyse de données complètes, de la spécification du besoins, élaboration d’une problématique pertinente ainsi que le détail de la mise en oeuvre technique. 
+    Un repo git (public) avec un README.md clair et précis. 
+    Un lien vers votre application hébergé sur le cloud de votre choix (Heroku, gcp, aws…)
+
+Contraintes 
+
+    - Data avec minimum 15 colonnes avec au moins une colonne représentant une date et 3 colonnes catégorielles 
+    Un maximum de commentaires dans le code
+    Texte type Markdown après chaque graphique/tableau (ex: description textuelle des features après chargement)
+    Tous les graphiques doivent être lisible (taille du graphique, infos représenté), si diagramme pas lisible, en faire une version filtrée dessous
+    Exposer concrètement votre problématique / question à définir : quel est le but de votre modèle et à quelle situation métier peut il correspondre ?
+    Un fichier docker-compose.yml avec au moins 2 services et un network
+    Une documentation impeccable du code
+
+Partie 1 : Analyse graphique des données (EDA)
+
+    - Diagrammes de répartition des données (type gaussienne sur les données)
+    - Vérification du nombre de données, si plusieurs données sont peu représentés (<3%) alors regrouper dans une seule et même catégorie, 1 pie chart avant/apres
+    - Nettoyage des données manquantes, encodage (OneHot, dictionnaire ou Sklearn Encoder)
+    - Boites à moustache avec données extrêmes
+    - Heatmap + observations sur les corrélations
+
+Partie 2: Model Building
+
+    - 3 algorithmes avec 3 paramètres différents (ex: max_depth, n_estimators,….)
+    - Affichage des coefficients/ accuracy
+    - Sélection du meilleur paramétrage
+    Le model est-il en overfitting/underfitting/OK ?
+
+Partie 3: Features Importance
+
+    - Affichage sous forme de barplot
+    Autre forme d’affichage si vous avez le temps 
+
+Partie 4: Model Réexécution avec les features sélectionnés
+
+    Affichage des metrics standard et commentaire sur la pertinence
+    +rapport PDF (4pages max) sous forme de rapport projet/note de synthese
+
+Partie 5: Base de données 
+
+    - Implémenter une base de données (SQL, PostgreSQL, Mongo…) à partir de votre fichier csv 
+    - Faite une sauvegarde de votre base en fichier csv afin d’interagir avec celle-ci en python (avec le SDK de votre choix)  
+    - Faite un screen shot d’une requête afin de prouver la connexion à la base 
+
+Partie 6: API, Conteneurisation et déploiement cloud 
+
+    Construction d’une api pour minimum 2 modèles avec une des librairies suivantes : 
+    - Fastapi
+    Flask 
+    Streamlit 
+    Livraison sur git avec documentation et tests 
+    (bonus) faire un fichier docker-compose.yml avec une application python qui réalise les opérations CRUD sur une bdd conteneuriser de votre choix
