@@ -1,0 +1,7 @@
+pandas
+uvicorn
+sklearn
+joblib
+fastapi
+seaborn
+streamlit

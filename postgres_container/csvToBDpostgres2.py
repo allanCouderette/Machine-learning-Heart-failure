@@ -73,5 +73,4 @@ for index,row in heart_failure.iterrows():
 
     print(query)
     cur.execute(query)
-
-conn.commit()
+    conn.commit()

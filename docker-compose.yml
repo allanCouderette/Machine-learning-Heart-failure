@@ -1,0 +1,39 @@
+version: "3.2"
+services:
+    streamlit:
+        build: streamlit_container
+        ports:
+           - "8501:8501"   
+        networks:
+           node_net:
+             ipv4_address: 172.0.0.4
+    fastapi:
+        build: fastapi_container
+        ports:
+           - "8001:8001"   
+        networks:
+           node_net:
+             ipv4_address: 172.0.0.2
+    db:
+        restart: always
+        image: postgres
+        env_file:
+         - postgres_container/database.env
+        ports:
+         - "5432:5432"
+        volumes:
+         - postgres_data:/var/lib/postgresql/data/
+
+        networks:
+            node_net:
+                ipv4_address: 172.0.0.3
+             
+networks:
+  node_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.0.0.0/16
+        
+volumes:
+  postgres_data:
