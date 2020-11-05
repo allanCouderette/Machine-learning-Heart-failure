@@ -8,10 +8,10 @@ Vous êtes ml engineer pour un client (fictif ou non) et vous devez mettre en pr
 Contraintes 
 
     - Data avec minimum 15 colonnes avec au moins une colonne représentant une date et 3 colonnes catégorielles 
-    Un maximum de commentaires dans le code
-    Texte type Markdown après chaque graphique/tableau (ex: description textuelle des features après chargement)
-    Tous les graphiques doivent être lisible (taille du graphique, infos représenté), si diagramme pas lisible, en faire une version filtrée dessous
-    Exposer concrètement votre problématique / question à définir : quel est le but de votre modèle et à quelle situation métier peut il correspondre ?
+    - Un maximum de commentaires dans le code
+    - Texte type Markdown après chaque graphique/tableau (ex: description textuelle des features après chargement)
+    - Tous les graphiques doivent être lisible (taille du graphique, infos représenté), si diagramme pas lisible, en faire une version filtrée dessous
+    - Exposer concrètement votre problématique / question à définir : quel est le but de votre modèle et à quelle situation métier peut il correspondre ?
     Un fichier docker-compose.yml avec au moins 2 services et un network
     Une documentation impeccable du code
 
@@ -51,6 +51,6 @@ Partie 6: API, Conteneurisation et déploiement cloud
     Construction d’une api pour minimum 2 modèles avec une des librairies suivantes : 
     - Fastapi
     Flask 
-    Streamlit 
+    - Streamlit 
     Livraison sur git avec documentation et tests 
     (bonus) faire un fichier docker-compose.yml avec une application python qui réalise les opérations CRUD sur une bdd conteneuriser de votre choix
