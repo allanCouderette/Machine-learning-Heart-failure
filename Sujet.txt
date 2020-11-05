@@ -28,7 +28,7 @@ Partie 2: Model Building
     - 3 algorithmes avec 3 paramètres différents (ex: max_depth, n_estimators,….)
     - Affichage des coefficients/ accuracy
     - Sélection du meilleur paramétrage
-    Le model est-il en overfitting/underfitting/OK ?
+    - Le model est-il en overfitting/underfitting/OK ?
 
 Partie 3: Features Importance
 
@@ -37,7 +37,7 @@ Partie 3: Features Importance
 
 Partie 4: Model Réexécution avec les features sélectionnés
 
-    Affichage des metrics standard et commentaire sur la pertinence
+    - Affichage des metrics standard et commentaire sur la pertinence
     +rapport PDF (4pages max) sous forme de rapport projet/note de synthese
 
 Partie 5: Base de données 
